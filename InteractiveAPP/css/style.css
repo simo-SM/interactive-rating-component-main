@@ -1,0 +1,173 @@
+/* 
+&## Layout ##
+
+?The designs were created to the following widths:
+
+*- Mobile: 375px
+*- Desktop: 1440px
+*/
+/*! ## Colors ## */
+:root{
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-950: hsl(216, 12%, 8%);
+    /* ### Primary ## */
+    --Orange-500: hsl(25, 97%, 53%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--Grey-950);
+
+}
+.containerAPP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.boxRating{
+    width: 374px;
+    background-image: linear-gradient(to bottom, var(--Grey-900) ,var(--Grey-950));
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 10px #00000059;
+    /* display: none; */
+}
+.boxRating{
+    padding: 25px;
+}
+.imageStar{
+    padding: 10px 0;
+    box-shadow: 1px 1px 10px #00000059;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+
+}
+.elementTEXT{
+    padding: 20px 0;
+    color: var(--White);
+
+}
+.elementTEXT h2{
+    padding: 10px 0;
+    font-weight: 700;
+}
+.elementTEXT p{
+    font-size: 15px;
+    width: 350px;
+    color: var(--Grey-500);
+    
+}
+.buttonNumber{
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+}
+.buttonNumber button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 5.5px;
+    padding: 10px;
+    border: none;
+    background-color: var(--Orange-900);
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.314);
+    color: var(--Grey-500);
+    font-size: 17px;
+    font-weight: 700;
+    
+}
+.btn{
+    padding: 9px;
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    background-color: var(--Orange-500);
+    color: var(--Orange-900);
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0;
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.314);
+}
+/* this hover button in Number */
+.buttonNumber button:hover{
+    background-color: var(--Orange-500);
+    cursor: pointer;
+    color: var(--Orange-900);
+    transition: 0.3s ease;
+}
+.buttonNumber button.active-number {
+    background-color: var(--White);
+    color:var(--Orange-900);
+    transform: scale(1.05);
+}
+
+.btn:hover{
+    background-color: var(--White);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.boxRating.shake {
+    animation: shake 0.3s;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+  
+/* ================================================ */
+/* =======================this pagr Thank you!========================= */
+/* ================================================ */
+
+.Rating-container{
+    width: 374px;
+    background-image: linear-gradient(to bottom, var(--Grey-900) ,var(--Grey-950));
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 10px #00000059;
+    text-align: center;
+    display: none;
+}
+.elementTHANK{
+    padding: 5px;
+    margin: 10px;
+   
+}
+.elementTHANK img{
+    padding: 10px;
+    width: 190px;
+    
+}
+.selected{
+    background-color: var(--Grey-900);
+    border-radius: 50px;
+    padding: 8px;
+    color: var(--Orange-500);
+    font-size: 14px;
+
+}
+.order-Text{
+    padding: 15px;
+    margin-top: 10px ;
+    color: var(--White);
+    font-size: 16px;
+}
+.order-Text h2 {
+    padding: 10px;
+}
+.order-Text p{
+    color: var(--Grey-500);
+}
